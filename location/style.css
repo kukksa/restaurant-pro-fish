@@ -1,0 +1,38 @@
+body {
+    background-color: #282828;
+}
+.text {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    align-self: center;
+    font-size: 28px;
+    margin: 35px;   
+}
+#container {
+    display: flex;
+    justify-content: space-around;
+}
+.imgOne,  .imgTwo{
+    margin: 5px;
+}
+
+@media all and (max-width: 800px) {
+    .text {
+        font-size: 15px;
+}
+#container {
+    display: flex;
+    flex-direction: column;
+}
+
+.imgOne,  .imgTwo{
+    width: 100%;
+}
+}
+
+@media all and (max-width: 500px) {
+    .imgOne,  .imgTwo{
+        height: 80%;
+    }
+}
+
